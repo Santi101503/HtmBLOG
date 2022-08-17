@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewpoint" content="width=device-width, inicial-scale=1">
+            <title>HtmBlog</title>
+        <body>
+
+            <br>
+            <h1>HtmBLOG</h1>
+            <div class="par"></div><p>¡Hola, Bienvenido a mi blog, el HtmBlog! ¡Aqui podrás encontrar mucha info importante acerca de mi! ;)</p>
+            <p>¡Pulsa en los botones para conocer más acerca de mi historia! :D</p>
+            
+            <div class="Btns">
+                <button onclick="pasado()">Pasado</button>
+                <button onclick="presente()">Presente</button>
+                <button onclick="futuro()">Futuro</button>
+            </div>
+
+            <style type="text/css">
+                html{ font: 12pt 'Minecraftia', sans-serif; }
+                @font-face {
+                    font-family: Minecraftia;
+                    src: url(Minecraftia-Regular.ttf);
+                }
+                body{
+                    background-image: url(Maincra.gif);
+                    background-size: cover;
+	                background-position: top center;
+                }
+                h1{
+                    text-align: center;
+                    color:white;
+                    font-size: 300%;
+                }
+                p{
+                    font-size: 140%;
+                    text-align: center;
+                }
+                button{
+                    margin: 0 auto;
+                    cursor: pointer;
+                    font-family: Minecraftia;
+                    src: url(Minecraftia-Regular.ttf);
+                    background-color: gray;
+                    color: whitesmoke;
+                    width: 50%;
+                    height: 175%;
+                    transition-duration: 0.5s;
+                }
+                button:hover{
+                    scale: 1.1;
+                    background-color: rgb(54, 138, 167);
+                    transition-duration: 0.1s;
+                }
+                .Btns{
+                    display: grid;
+                    grid-gap: 50px;
+                }
+                
+            </style>
+
+            <script type="text/javascript">
+                function pasado(){
+                    alert("Nací en Cartagena un 15 de octubre de 2003, sin embargo, debido a los lazos de mi padre con las fuerzas armadas, crecí en muchas partes de Colombia, y no en mi ciudad natal. Debido a esto, también estudie en varios colegios distintos, entre ellos: El Liceo del Caribe en San Andrés islas, el Gimnasio los Pinos en Bogotá, y varios colegios asociados con las fuerzas armadas. Mas todo siempre vuelve a donde empieza, y a la edad de 12 años, volví a mi querida Cartagena y terminé allí mis estudios de educación media en el Aspaen Gimnasio Cartagena.")
+                }
+                function presente(){
+                    alert("Actualmente resido en Chía y me encuentro becado cursando 3er semestre de Ingeniera Informática en la Universidad de la Sabana. Amo mi carrera, y mis pasiones son compartir con amigos, jugar videojuegos y la música, tanto escucharla como hacerla. Trabajé en el PAT un semestre, y aprendí bastante del mundo laboral, y el valor del trabajo. Actualmente me centro en aprender cosas nuevas y disfrutar de la vida :D.")
+                }
+                function futuro(){
+                    alert("El futuro es, y siempre será un misterio, sin embargo, todos tenemos planes para el mañana, y yo no soy la excepción. Si bien no pienso demasiado en ello, hay cosas que tengo siempre en mente que quiero para mi vida dentro de unos años, espero que al termino de graduarme, poder empezar a trabajar en una empresa de desarrollo de videojuegos, o de software, como programador front-end, (que es lo que más me apasiona en este momento), y no solo dedicarme a ello, sino a muchas más áreas de la informática, como lo es la inteligencia artificial, las bases de datos, la ciberseguridad, entre muchas cosas más que este basto mundo tiene para ofrecer. Adicionalmente me gustaría vivir en Europa, Canadá, USA, Japón, Corea del Sur, Australia, o Nueva Zelanda. ;)")
+                }
+            </script>
+        </body>
+    </html>
